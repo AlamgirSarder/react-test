@@ -22,7 +22,7 @@
 
     "predeploy": "npm run build",
 
-    "deploy": "npm gh-pages -d dist"
+    "deploy": "gh-pages -d bulid"
 
   },
 
