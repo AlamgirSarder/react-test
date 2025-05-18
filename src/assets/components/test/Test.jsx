@@ -1,25 +1,24 @@
+import React, { useState } from 'react'
 
-import React, { useEffect } from 'react'
-
-
-
+const Test = () => {
 
 
-function Test(){
+const [user, setUser] = useState("Alamgir Sarder");
 
-  
-    return(
-        <>
-                {
-                    [1,2,3,4,5,6].map((item,index)=>(
-                        <h1 key={index}>
-                            {item}
-                        </h1>
-                    ))
-                }
-        </>
-    )
+
+const change = ()=>{
+    setUser(<ul><li>Sameer</li></ul>)
 }
 
 
-export default Test;
+  return (
+    <div>
+
+            <h1>{user}</h1>
+            <button onClick={change}>Change</button>
+
+    </div>
+  )
+}
+
+export default Test
